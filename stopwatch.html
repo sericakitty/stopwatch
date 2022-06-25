@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Serica's Web Dev Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <script src="stopwatch.js" defer></script>
+  </head>
+
+  <body>
+
+    <!-- Header, Nav and Main tags for accessibility-->
+    <!-- Bootstrap centered navbar, custom css classes are navbar and navtext-->
+
+    <nav>
+
+      <ul class="nav justify-content-center navbar">
+
+
+        <li class="nav-item">
+          <a class="nav-link navtext" href="https://serica.github.io/">Home</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+    <main class="footerfixer">
+
+      <!--Bootstrap container class for better responsiveness-->
+      <div class="container">
+
+        <h1>Stopwatch</h1>
+        <div class="srccode">
+          <a href="#" target="_blank" class="srccodelink">Source Code</a>
+        </div>
+
+        <div class="stopwatchcontainer">
+
+
+          <div class="timecontainer">
+            <span>Elapsed Time: </span>
+            <span class="timeshow" id="displaytime">00:00´00´´000</span>
+          </div>
+
+          <div class="buttonscontainer">
+            <button class="btn stopwatchbtn" id="startbutton">Start</button>
+            <button class="btn stopwatchbtn" id="lapbutton" disabled>Lap</button>
+            <button class="btn stopwatchbtn" id="stopbutton" disabled>Stop</button>
+            <button class="btn stopwatchbtn" id="clearbutton" disabled>Clear</button>
+          </div>
+
+          <div>
+            <ol class="timelist" id="timelist"></ol>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="footer"></footer>
+
+    <!--For Bootstrap functionality-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>
